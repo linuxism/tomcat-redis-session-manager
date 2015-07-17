@@ -15,7 +15,11 @@ import org.apache.juli.logging.LogFactory;
 public class RedisSessionHandlerValve extends ValveBase {
   private final Log log = LogFactory.getLog(RedisSessionManager.class);
   private RedisSessionManager manager;
-
+  
+  public RedisSessionHandlerValve() {
+	  super(true);
+  }
+  
   public void setRedisSessionManager(RedisSessionManager manager) {
     this.manager = manager;
   }
