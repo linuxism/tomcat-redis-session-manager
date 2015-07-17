@@ -17,7 +17,7 @@ public class RedisSessionHandlerValve extends ValveBase {
   private RedisSessionManager manager;
   
   public RedisSessionHandlerValve() {
-	  super(true);
+    super(true);
   }
   
   public void setRedisSessionManager(RedisSessionManager manager) {
